@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.CadastroDeInformacoesFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tamanho_margem_16"
+        android:hint="@string/titulo_de_cadastro"
+        android:textSize="@dimen/tamanho_texto_20"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/tamanho_margem_16"
+        android:layout_marginLeft="@dimen/tamanho_margem_16"
+        android:layout_marginTop="@dimen/tamanho_margem_32"
+        android:hint="@string/nome_sobrenome_edittext"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextPersonHoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/tamanho_margem_16"
+        android:layout_marginLeft="@dimen/tamanho_margem_16"
+        android:layout_marginTop="@dimen/tamanho_margem_16"
+        android:inputType="numberDecimal"
+        android:hint="@string/hora_trabalhada"
+        app:layout_constraintStart_toStartOf="@+id/editTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPersonValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/tamanho_margem_16"
+        android:layout_marginLeft="@dimen/tamanho_margem_16"
+        android:layout_marginTop="@dimen/tamanho_margem_16"
+        android:inputType="numberDecimal"
+        android:hint="@string/valor_hora"
+        app:layout_constraintStart_toStartOf="@+id/editTextPersonHoras"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonHoras" />
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginRight="@dimen/tamanho_margem_16"
+        android:layout_marginLeft="@dimen/tamanho_margem_16"
+        android:backgroundTint="@color/laranja"
+        android:text="@string/botao_calcular"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPersonValor"
+        app:layout_constraintStart_toStartOf="@+id/editTextPersonValor"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonValor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
